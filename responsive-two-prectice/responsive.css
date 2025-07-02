@@ -7,4 +7,52 @@
   font-style: normal;
 }
 
+header {
+    background-color: #ff8f0e1e;
+}
+
+.brandName {
+    color: #FF900E ;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.brandNamePart{
+    color: #000000;
+}
+
+.navbar , .navMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;    
+}
+
+.listItem{
+    list-style: none;
+    padding: 5px 10px;
+    margin: none;
+}
+
+.listItem a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;   
+}
+
+.listItem a:hover{
+    color: #FF900E;
+    transition: 0.20s;
+}
+
+.user{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #FF900E;
+
+}
+
+
+
 
