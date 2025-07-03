@@ -7,13 +7,24 @@
   font-style: normal;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #ffffff;
+}
+
+
+
 header {
     background-color: #ff8f0e1e;
+    padding: 5px 0 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .brandName {
     color: #FF900E ;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 700;
 }
 
@@ -37,7 +48,8 @@ header {
 .listItem a{
     text-decoration: none;
     color: #000000;
-    font-weight: 500;   
+    font-weight: 500; 
+    font-size: 1.12rem; 
 }
 
 .listItem a:hover{
@@ -54,5 +66,89 @@ header {
 }
 
 
+.banner{
+    width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bannerTitle{
+    font-size: 4rem;
+    font-weight: 700;
+    
+    color: #000000;
+    margin-bottom: 20px;
+}
 
 
+
+
+
+.bannerImage {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* sheared style */
+.btnPrimary{
+    background-color: #FF900E;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 50px;
+}
+
+/* Dark 02 */
+.dark02 {
+    color: #424242;
+}
+/* Dark 03 */
+
+
+
+
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* responsive */
+@media screen and (max-width: 768px) {
+    .navbar, .navMenu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brandName {
+        font-size: 2.5rem;
+    }
+
+    .bannerTitle {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .banner {
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    .bannerImage {
+        width: 100%;
+    }
+
+    .btnPrimary {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+}
