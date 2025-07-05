@@ -18,8 +18,9 @@ body {
 
 header {
     background-color: #ff8f0e1e;
-    padding: 5px 0 20px 0;
+    padding: 5px 0px 45px 0px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 85px;
 }
 
 .brandName {
@@ -38,6 +39,7 @@ header {
     align-items: center;
     padding: 0 20px;    
 }
+
 
 .listItem{
     list-style: none;
@@ -66,22 +68,18 @@ header {
 }
 
 
-.banner{
+.bannerText{
     width: 850px;
     margin: 0 auto;
     text-align: center;
 }
 
-.bannerTitle{
+.bannerHeading{
     font-size: 4rem;
     font-weight: 700;
-    
     color: #000000;
     margin-bottom: 20px;
 }
-
-
-
 
 
 .bannerImage {
@@ -92,8 +90,170 @@ header {
     margin: 0 auto;
 }
 
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* team section styles */
+
+.teamSection {
+    width: 1320px;
+    margin: 0 auto;
+    background-color: #fcf8f3c7;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 20px;
+    align-items: center;
+}
+
+.teamImages{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 10px;
+}
+
+.teamImages img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.teamFeatures{
+    text-align: start;
+    justify-content: start;
+}
+
+.teamHeading{
+    width: 460px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.part1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #424242;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.part3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FF900E;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.teamParagraph{
+    width: 700px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #727272;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* features Section style */
+
+.featuresSection {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 160px;
+    box-sizing: border-box;
+}
+
+.featuresContent {
+    width: 100%;
+    text-align: center;
+}
+
+.featuresHeading {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000000;
+    border-left: 5px solid #FF900E;
+    text-align: start;
+    box-sizing: border-box;
+}
+
+.featuresParagraph {
+    font-size: 1rem;
+    color: #727272;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: start;
+    box-sizing: border-box;
+}
+
+.featuresItem{
+    background-color: #ffffff;
+    padding: 20px 30px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: start;
+    letter-spacing: 1.5px;
+    box-sizing: border-box;
+}
+
+.featuresImage {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.architectImage {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.experienceBadge{
+    position: relative;
+    top: -100px;
+    left: -10%;
+    background-color: #FF900E;
+    color: #ffffff;
+    padding: 20px 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 340px;
+    box-sizing: border-box;
+    
+}
+
+.experienceBadge h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.experienceBadge p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ffffff;
+}
 
 /* sheared style */
+
+
+
+
 .btnPrimary{
     background-color: #FF900E;
     color: #ffffff;
@@ -106,23 +266,47 @@ header {
     margin-bottom: 50px;
 }
 
+.btnPrimary:hover {
+    background-color: #e07b0c;
+}
+
+
+
+
+main {
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* Dark 02 */
 .dark02 {
     color: #424242;
 }
 /* Dark 03 */
-
-
-
-
-.navbar, .banner{
-    max-width: 1440px;
-    margin: 0 auto;
+.dark03 {
+    color: #727272;
 }
 
 
-/* responsive */
+main > section {
+    margin-top: 50px
+}
+
+
+
+
+
+
+
+
+/* ****************---------****************
+********************responsive *************
+********************----------**************/
 @media screen and (max-width: 768px) {
+
+    /********** banner section *******/
     .navbar, .navMenu {
         flex-direction: column;
         align-items: center;
@@ -132,23 +316,186 @@ header {
         font-size: 2.5rem;
     }
 
-    .bannerTitle {
-        font-size: 2.5rem;
-        margin-bottom: 15px;
+    .bannerText {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
     }
 
-    .banner {
-        width: 90%;
-        padding: 0 20px;
+    .bannerHeading {
+        font-size: 2.5rem;
+    }
+
+    .bannerParagraph {
+        font-size: 1rem;
+        margin: 10px auto;
     }
 
     .bannerImage {
+        width: 90%;
+        height: auto;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* main */
+    main {
         width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    
+
+    /* Team Section */
+
+    .teamSection {
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0px;
+        justify-items: center;
+    }
+
+    .teamImages {
+        grid-template-columns: 1fr;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        padding: 0 20px;
+        margin: 0 auto;
+        display: grid;
+        justify-items: center;
+    }
+
+    .teamImages img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .teamFeatures {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .teamHeading {
+        width: 100%;
+        font-weight: 700;
+        text-align: center ;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .part1, .part3 {
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+
+    .teamParagraph {
+        width: 90% ;
+        text-align: center;
+        font-weight: 400;
+        font-size: 1rem;
+
     }
 
     .btnPrimary {
-        width: 100%;
-        padding: 15px;
-        font-size: 1.5rem;
+        padding: 8px 16px;
+        font-size: 1rem;
+        margin-bottom: 30px;
     }
+
+    /* Features Section */
+    .featuresSection {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .featuresContent {
+        width: 100%;
+        text-align: center;
+    }
+
+    .featuresHeading {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #000000;
+        border-left: 5px solid #FF900E;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .featuresParagraph {
+        font-size: 0.9rem;
+        color: #727272;
+        font-weight: 400;
+        line-height: 1.4;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .featuresItem {
+        background-color: #ffffff;
+        padding: 15px 20px;
+        margin: 10px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        letter-spacing: 1.5px;
+        box-sizing: border-box;
+    }
+
+    .featuresImage {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    .architectImage {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .experienceBadge {
+        position: relative;
+        top: -70px;
+        left: 0;
+        background-color: #FF900E;
+        color: #ffffff;
+        padding: 10px 10px;
+        text-align: center;
+        box-sizing: border-box;
+        width: 50%;
+    }
+    .experienceBadge h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 0;
+        margin: 5px 0;
+    }
+
+    .experienceBadge p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+
+    
 }
